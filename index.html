@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stryle.css">
     <title>Document</title>
 </head>
 <body>
     <header></header>
     <section>
+        <div id="select-container">
+            <div id="select-box">
+                <!-- <form action="">
+                    <label for="sixSided">Six</label>
+                    <input type="radio" name="diceSide" id="sixSided" >
+                    <label for="eightSided">Eight</label>
+                    <input type="radio" name="diceSide" id="eightSided">
+                    <label for="tenSided">Ten</label>
+                    <input type="radio" name="diceSide" id="tenSided">
+                    <label for="tenSided">Twenty</label>
+                    <input type="radio" name="diceSide" id="twentySided">
+                </form> -->
+
+                <label for="diceSide">Choose a dice:</label>
+                <select name="diceSide" id="diceSide">
+                    <option value="sixSided">sixSided</option>
+                    <option value="eightSided">eightSided</option>
+                    <option value="tenSided">tenSided</option>
+                    <option value="twentySided">twentySided</option>
+                </select>
+            </div>
+        </div>
         <div id="flex-container">
             <div id="box">
-              <button id="roll">Roll Dice</button>
-              <div id="results"></div>
+                    <button id="roll">Roll Dice</button>
+                    <div id="results"></div>
             </div>
+          </div>
+          <div>
+            <p id="placeholder">
+  
+            </p>
+            <button id="button">Roll Dice</button>
           </div>
     </section>
     <footer id="footer"></footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
