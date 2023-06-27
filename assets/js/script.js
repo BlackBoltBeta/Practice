@@ -1,66 +1,32 @@
-let dicesix = {
-  sides: 6,
-  roll: function () {
-    let randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
+function diceroll(num) {
+  let randomNumber = Math.floor(Math.random() * num) + 1;
+    console.log("bananwaffle")
+    printNumber(randomNumber)
 }
-
-let diceeight = {
-  sides: 8,
-  roll: function () {
-    let randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
-
-let diceten = {
-  sides: 10,
-  roll: function () {
-    let randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
-
-let dicetwenty = {
-  sides: 20,
-  roll: function () {
-    let randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
-  }
-}
-
-
 
 //Print diceroll
 
 function printNumber(number) {
   let placeholder = document.getElementById('placeholder');
-  placeholder.innerHTML = number;
+  placeholder.innerText = number;
 }
 
 let button = document.getElementById('button');
 
 button.onclick = function() {
   
-
-
 let diceSide = document.getElementById('diceSide');
-     let selected = diceSide.options[mySelect.selectedIndex].text;
+     let selected = diceSide.options[diceSide.selectedIndex].text;
      if(selected === 'sixSided'){
-      let result = dicesix.roll();
+      diceroll(6);
      } else if (selected === 'eightSided') {
-      let result = diceeight.roll();
+      diceroll(8);
     } else if (selected === 'tenSided') {
-      let result = diceten.roll();
+      diceroll(10);
     } else if (selected === 'twentySided') {
-      let result = dicetwenty.roll();
+      diceroll(20);
     } else {
 
     }
     printNumber(result);
   };
-
-
-
-
