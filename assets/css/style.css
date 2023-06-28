@@ -3,10 +3,10 @@
   text-align: center;
 }
 button {
-  background-color: rgb(82, 186, 179);
+  background-color: #2E3840;
   border-radius: 6px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 10px;
   text-transform: uppercase;
   width: 200px;
@@ -23,6 +23,7 @@ body {
   color: #292929;
   font: 90% Roboto, Arial, sans-serif;
   font-weight: 300;
+  background-color: #F9DBBB;
 }
 
 p {
@@ -45,8 +46,8 @@ h3 {
   line-height: 80px;
   margin: 0;
   padding-left: 10px;
-  background: #e0e0e0;
-  color: #292929;
+  background: #4E6E81;
+  color: black;
 }
 
 #footer p {
@@ -56,7 +57,7 @@ h3 {
 #footer {
   clear: both;
   width: 100%;
-  background: #42444e;
+  background: #2E3840 ;
   color: #fff;
 }
 
@@ -65,7 +66,12 @@ h3 {
   width: 90px;
   padding: 30px;
   margin: 50px auto;
-  border: 1px solid gray;
+  border: 2px solid #FF0303;
   border-radius: 10px;  
   font-size:50px;
+  color: #2E3840;
+}
+
+#content-box {
+  background-color: #F9DBBB;
 }
