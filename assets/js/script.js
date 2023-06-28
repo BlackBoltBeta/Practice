@@ -1,3 +1,5 @@
+
+// Determine random number
 function diceroll(num) {
   let randomNumber = Math.floor(Math.random() * num) + 1;
     console.log("bananwaffle")
@@ -5,7 +7,6 @@ function diceroll(num) {
 }
 
 //Print diceroll
-
 function printNumber(number) {
   let placeholder = document.getElementById('placeholder');
   placeholder.innerText = number;
@@ -13,6 +14,7 @@ function printNumber(number) {
 
 let button = document.getElementById('button');
 
+// Select dice type
 button.onclick = function() {
   
 let diceSide = document.getElementById('diceSide');
@@ -25,8 +27,6 @@ let diceSide = document.getElementById('diceSide');
       diceroll(10);
     } else if (selected === 'twentySided') {
       diceroll(20);
-    } else {
-
     }
     printNumber(result);
   };
