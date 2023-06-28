@@ -12,15 +12,7 @@ button {
   width: 200px;
   cursor: pointer;
 }
-#placeholder {
-  height: 40px;
-  width: 40px;
-  padding: 30px;
-  margin: 50px auto;
-  border: 1px solid gray;
-  border-radius: 10px;  
-  font-size:50px;
-}
+
 
 html, body {
   margin: 0;
@@ -61,19 +53,19 @@ h3 {
   padding: 20px 10px;
 }
 
-/*#container {
-  width: 700px;
-  margin: 0 auto;
-}*/
-
-#content {
-  width: 80vw;
-
-}
-
 #footer {
   clear: both;
   width: 100%;
   background: #42444e;
   color: #fff;
+}
+
+#placeholder {
+  height: 90px;
+  width: 90px;
+  padding: 30px;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:50px;
 }
